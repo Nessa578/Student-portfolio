@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planner | Vanessa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav aria-label="Main navigation">
+<a class="logo" href="index.html">Vanessa</a>
+<button id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" class="active">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav>
+</header>
+<main>
+<section class="block" style="border-top:none"><div class="wrap" style="max-width:700px">
+<h2>Academic Planner</h2>
+<p>Add your tasks, tick them off when done, and delete them when you no longer need them.</p>
+<form id="task-form" class="add-row">
+<label for="task-input" style="position:absolute;left:-9999px">New task</label>
+<input type="text" id="task-input" placeholder="e.g. Finish COS 106 assignment" autocomplete="off">
+<button class="btn" type="submit">Add task</button>
+</form>
+<p class="error" id="task-error"></p>
+<p id="count"></p>
+<ul id="task-list"></ul>
+</div></section>
+</main>
+<footer><p style="margin:0">&copy; 2026 Vanessa. COS 106 Term Project.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
